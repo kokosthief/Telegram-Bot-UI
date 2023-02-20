@@ -5,4 +5,4 @@ It can be seen live at https://portal.defirobot.org/
 
 I used Tailwind CSS to style it.
 
-![Screenshot](README.md)
+![Screenshot](Screenshot-TG-Bot-UI.png)
