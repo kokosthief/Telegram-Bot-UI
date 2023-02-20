@@ -1,0 +1,474 @@
+import React from "react";
+import ContractSimulatorLogo from "../images/contract-simulator-logo.png";
+import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
+import { EllipsisHorizontalIcon } from "@heroicons/react/24/outline";
+import { PaperClipIcon } from "@heroicons/react/24/outline";
+import { MicrophoneIcon } from "@heroicons/react/24/outline";
+import { FaceSmileIcon } from "@heroicons/react/24/outline";
+
+function ContractSimulator() {
+  return (
+    <div className=" flex-auto  ">
+      {/* Whole Window */}
+      <div className="flex-col rounded-lg border border-[#2f404f] font-sans  shadow-lg">
+        {/* Top Bar */}
+        <div className="flex h-4 items-center border-b border-[#2f404f] bg-[#203140]">
+          <span className="ml-2 h-2 w-2 rounded-full border-[1px]  border-[#F21111] bg-[#FF4443]"></span>
+          <span className="ml-1 h-2 w-2 rounded-full border-[1px]  border-[#FFBE00] bg-[#FFBE00]"></span>
+          <span className="ml-1 h-2 w-2 rounded-full border-[1px]  border-[#00DA47] bg-[#00DA47]"></span>
+          <p className="grow text-center text-[10px] font-bold text-gray-400">
+            Telegram
+          </p>
+        </div>
+
+        {/* Chat Name Bar */}
+        <div className="flex h-10 items-center border-b border-[#203140] bg-[#18232C]">
+          <div className="flex-row">
+            <img
+              className="ml-1 mr-3 h-7 w-7 rounded-full"
+              src={ContractSimulatorLogo}
+            />
+          </div>
+          <div className="flex-column grow px-1">
+            <p className="  text-left text-[10px] text-[#FEFEFF] -mb-[1px]">
+              DeFi-Robot Contract Simulator
+            </p>
+            <p className=" text-left text-[10px] text-gray-300">Bot </p>
+          </div>
+          <div className="flex">
+            <MagnifyingGlassIcon className="mx-0 flex h-4 w-4 text-[#2FA6FE]" />
+            <EllipsisHorizontalIcon className="mx-1 flex h-4 w-4 text-[#2FA6FE]" />
+          </div>
+        </div>
+
+        {/* Messages Container */}
+        <div className="relative grid grid-cols-1 content-end border-b border-[#203140] bg-[#18232C]">
+          {/* Reply 1st Ask */}
+          <div className="mx-2 h-min w-max justify-self-start rounded-[8px] bg-[#203140] py-[2px] px-[6px]">
+            <div className="text-left font-sans text-[10px] leading-[14px] text-white">
+              <p className="p1">Current block: 16221140</p>
+            </div>
+          </div>
+
+          {/* Reply 2nd Ask */}
+          <div className="mx-2 mt-0.5 h-min w-max justify-self-start rounded-[8px] bg-[#203140] py-[2px] px-[6px]">
+            <div className="text-left font-sans text-[10px] leading-[14px] text-white">
+              <p className="p1">
+                <strong>Please enter Token address:</strong>
+              </p>
+            </div>
+          </div>
+
+          {/* Sent Advanced Simulation */}
+          <div className="mx-2 mt-0.5 h-min  w-max justify-self-end rounded-[8px] bg-[#3F6A96] py-[2px] px-[6px]">
+            <div className="text-left font-sans text-[10px] leading-[14px] text-white">
+              <p class="p1">0x2d886570A0dA04885bfD6eb48eD8b8ff01A0eb7e</p>
+            </div>
+          </div>
+
+          {/* Reply Starting Simulation */}
+          <div className="mx-2 mt-0.5 h-min w-max justify-self-start rounded-[8px] bg-[#203140] py-[2px] px-[6px]">
+            <div className="text-left font-sans text-[10px] leading-[14px] text-white">
+            <p className="p1">⚙️ <span className="s1"><strong>Starting simulation for Token: </strong></span></p>
+            <p className="s1"> 0x2d886570A0dA04885bfD6eb48eD8b8ff01A0eb7e</p>
+            </div>
+          </div>
+
+          {/* Reply Select an Option */}
+          <div className="mx-2 mt-0.5 h-min w-max justify-self-start rounded-[8px] bg-[#203140] py-[2px] px-[6px]">
+            <div className="text-left font-sans text-[10px] leading-[14px] text-white">
+            <p className="p1"><strong>Please select an option: </strong></p>
+            </div>
+          </div>
+
+          {/* Sent Advanced Simulation */}
+          <div className="mx-2 mt-0.5 h-min w-max justify-self-end rounded-[8px] bg-[#3F6A96] py-[2px] px-[6px]">
+            <div className="text-left font-sans text-[10px] leading-[14px] text-white">
+              <p class="p1">Advanced Simulation</p>
+            </div>
+          </div>
+
+          {/* Reply Select an Option */}
+          <div className="mx-2 mt-0.5 h-min w-max justify-self-start rounded-[8px] bg-[#203140] py-[2px] px-[6px]">
+            <div className="text-left font-sans text-[10px] leading-[14px] text-white">
+            <p className="p1"><strong>Custom Launch Function? </strong></p>
+            </div>
+          </div>
+
+          {/* Sent Auto */}
+          <div className="mx-2 mt-0.5 h-min w-max justify-self-end rounded-[8px] bg-[#3F6A96] py-[2px] px-[6px]">
+            <div className="text-left font-sans text-[10px] leading-[14px] text-white">
+              <p class="p1">Custom</p>
+            </div>
+          </div>
+
+          {/* Reply Select an Option */}
+          <div className="mx-2 mt-0.5 h-min w-max justify-self-start rounded-[8px] bg-[#203140] py-[2px] px-[6px]">
+            <div className="text-left font-sans text-[10px] leading-[14px] text-white">
+            <p className="p1"><strong>Please enter 4bytes: </strong></p>
+            </div>
+          </div>
+
+          {/* Sent Auto */}
+          <div className="mx-2 mt-0.5 h-min w-max justify-self-end rounded-[8px] bg-[#3F6A96] py-[2px] px-[6px]">
+            <div className="text-left font-sans text-[10px] leading-[14px] text-white">
+              <p class="p1">0x34848b9a</p>
+            </div>
+          </div>
+
+          {/* Reply Advanced Sim */}
+          <div className="mx-2 mt-0.5 mb-1.5 h-min w-max justify-self-start rounded-[8px] bg-[#203140] py-[2px] px-[6px]">
+            <div className="text-left font-sans text-[10px] leading-[14px] text-white">
+              <p className="p1">
+                <span className="s1">
+                  <strong>Enable: </strong>
+                </span>
+                <span className="s2">0x34848b9a</span> |
+                openTrading(uint256,uint256,uint256)
+              </p>
+              <p className="p2">
+                <strong>
+                  Parameters:
+                  <span className="Apple-converted-space">&nbsp;</span>
+                </strong>
+                <span className="s3"> 5 5 5</span>
+              </p>
+              <p className="p1">&nbsp;</p>
+              <p className="p1">
+                <span className="s1">
+                  <strong>Block | </strong>
+                </span>
+                Buy %{" "}
+                <span className="s1">
+                  <strong>| </strong>
+                </span>
+                Sell %{" "}
+                <span className="s1">
+                  <strong>| </strong>
+                </span>
+                Can Buy{" "}
+                <span className="s1">
+                  <strong>| </strong>
+                </span>
+                Can Sell
+              </p>
+              <p className="p1">
+                <span className="s1">
+                  <strong>Block: 0 |</strong>
+                </span>{" "}
+                99.99%{" "}
+                <span className="s1">
+                  <strong>| </strong>
+                </span>
+                100.0%{" "}
+                <span className="s1">
+                  <strong>| </strong>
+                </span>
+                True{" "}
+                <span className="s1">
+                  <strong>| </strong>
+                </span>
+                True
+              </p>
+              <p className="p1">
+                <span className="s1">
+                  <strong>Block: 1 |</strong>
+                </span>{" "}
+                99.99%{" "}
+                <span className="s1">
+                  <strong>| </strong>
+                </span>
+                100.0%{" "}
+                <span className="s1">
+                  <strong>| </strong>
+                </span>
+                True{" "}
+                <span className="s1">
+                  <strong>| </strong>
+                </span>
+                True
+              </p>
+              <p className="p1">
+                <span className="s1">
+                  <strong>Block: 2 |</strong>
+                </span>{" "}
+                99.99%{" "}
+                <span className="s1">
+                  <strong>| </strong>
+                </span>
+                100.0%{" "}
+                <span className="s1">
+                  <strong>| </strong>
+                </span>
+                True{" "}
+                <span className="s1">
+                  <strong>| </strong>
+                </span>
+                True
+              </p>
+              <p className="p1">
+                <span className="s1">
+                  <strong>Block: 3 |</strong>
+                </span>{" "}
+                99.99%{" "}
+                <span className="s1">
+                  <strong>| </strong>
+                </span>
+                100.0%{" "}
+                <span className="s1">
+                  <strong>| </strong>
+                </span>
+                True{" "}
+                <span className="s1">
+                  <strong>| </strong>
+                </span>
+                True
+              </p>
+              <p className="p1">
+                <span className="s1">
+                  <strong>Block: 4 |</strong>
+                </span>{" "}
+                99.99%{" "}
+                <span className="s1">
+                  <strong>| </strong>
+                </span>
+                100.0%{" "}
+                <span className="s1">
+                  <strong>| </strong>
+                </span>
+                True{" "}
+                <span className="s1">
+                  <strong>| </strong>
+                </span>
+                True
+              </p>
+              <p className="p1">
+                <span className="s1">
+                  <strong>Block: 5 |</strong>
+                </span>{" "}
+                99.99%{" "}
+                <span className="s1">
+                  <strong>| </strong>
+                </span>
+                100.0%{" "}
+                <span className="s1">
+                  <strong>| </strong>
+                </span>
+                True{" "}
+                <span className="s1">
+                  <strong>| </strong>
+                </span>
+                True
+              </p>
+              <p className="p1">
+                <span className="s1">
+                  <strong>Block: 6 |</strong>
+                </span>{" "}
+                5.0%{" "}
+                <span className="s1">
+                  <strong>| </strong>
+                </span>
+                5.0%{" "}
+                <span className="s1">
+                  <strong>| </strong>
+                </span>
+                True{" "}
+                <span className="s1">
+                  <strong>| </strong>
+                </span>
+                True
+              </p>
+              <p className="p1">
+                <span className="s1">
+                  <strong>Block: 7 |</strong>
+                </span>{" "}
+                5.0%{" "}
+                <span className="s1">
+                  <strong>| </strong>
+                </span>
+                5.0%{" "}
+                <span className="s1">
+                  <strong>| </strong>
+                </span>
+                True{" "}
+                <span className="s1">
+                  <strong>| </strong>
+                </span>
+                True
+              </p>
+              <p className="p1">
+                <span className="s1">
+                  <strong>Block: 8 |</strong>
+                </span>{" "}
+                5.0%{" "}
+                <span className="s1">
+                  <strong>| </strong>
+                </span>
+                5.0%{" "}
+                <span className="s1">
+                  <strong>| </strong>
+                </span>
+                True{" "}
+                <span className="s1">
+                  <strong>| </strong>
+                </span>
+                True
+              </p>
+              <p className="p1">
+                <span className="s1">
+                  <strong>Block: 9 |</strong>
+                </span>{" "}
+                5.0%{" "}
+                <span className="s1">
+                  <strong>| </strong>
+                </span>
+                5.0%{" "}
+                <span className="s1">
+                  <strong>| </strong>
+                </span>
+                True{" "}
+                <span className="s1">
+                  <strong>| </strong>
+                </span>
+                True
+              </p>
+              <p className="p1">
+                <span className="s1">
+                  <strong>Block: 10 |</strong>
+                </span>{" "}
+                5.0%{" "}
+                <span className="s1">
+                  <strong>| </strong>
+                </span>
+                5.0%{" "}
+                <span className="s1">
+                  <strong>| </strong>
+                </span>
+                True{" "}
+                <span className="s1">
+                  <strong>| </strong>
+                </span>
+                True
+              </p>
+              <p className="p1">
+                <span className="s1">
+                  <strong>Block: 11 |</strong>
+                </span>{" "}
+                5.0%{" "}
+                <span className="s1">
+                  <strong>| </strong>
+                </span>
+                5.0%{" "}
+                <span className="s1">
+                  <strong>| </strong>
+                </span>
+                True{" "}
+                <span className="s1">
+                  <strong>| </strong>
+                </span>
+                True
+              </p>
+              <p className="p1">
+                <span className="s1">
+                  <strong>Block: 12 |</strong>
+                </span>{" "}
+                5.0%{" "}
+                <span className="s1">
+                  <strong>| </strong>
+                </span>
+                5.0%{" "}
+                <span className="s1">
+                  <strong>| </strong>
+                </span>
+                True{" "}
+                <span className="s1">
+                  <strong>| </strong>
+                </span>
+                True
+              </p>
+              <p className="p1">
+                <span className="s1">
+                  <strong>Block: 13 |</strong>
+                </span>{" "}
+                5.0%{" "}
+                <span className="s1">
+                  <strong>| </strong>
+                </span>
+                5.0%{" "}
+                <span className="s1">
+                  <strong>| </strong>
+                </span>
+                True{" "}
+                <span className="s1">
+                  <strong>| </strong>
+                </span>
+                True
+              </p>
+              <p className="p1">
+                <span className="s1">
+                  <strong>Block: 14 |</strong>
+                </span>{" "}
+                5.0%{" "}
+                <span className="s1">
+                  <strong>| </strong>
+                </span>
+                5.0%{" "}
+                <span className="s1">
+                  <strong>| </strong>
+                </span>
+                True{" "}
+                <span className="s1">
+                  <strong>| </strong>
+                </span>
+                True
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Input, Icons and Grid Buttons */}
+        <div className="h-auto flex-col border-b border-[#203140] bg-[#18232C]">
+          {/* Input & Icons */}
+          <div className="flex h-10 items-center bg-[#18232C]">
+            <button>
+              <PaperClipIcon className="mx-0 ml-3 h-5 w-5 flex-none text-[#A1B3C4]" />
+            </button>
+            <input
+              class="ml-1 flex-1 border-none bg-inherit text-left text-[12px] text-[#A1B3C4] focus:ring-0"
+              type="text"
+              aria-label="Write Message"
+              placeholder="Write a message..."
+            ></input>
+            <button>
+              <FaceSmileIcon className="mx-0 h-4 w-4 flex-none text-[#A1B3C4]" />
+            </button>
+            <button>
+              <MicrophoneIcon className="mx-1 h-4 w-4 flex-none text-[#2FA6FE]" />
+            </button>
+          </div>
+
+          {/* Grid Buttons */}
+          <div className="mx-1 mb-1 grid grid-cols-2 gap-[2px]">
+            <button class="rounded-md bg-[#203140]  p-[6px]  text-center text-[12px] text-[#FEFEFF]">
+              Check LP
+            </button>
+            <button class="rounded-md bg-[#203140]  p-[6px]  text-center text-[12px] text-[#FEFEFF]">
+              Quick Simulation
+            </button>
+            <button class="rounded-md bg-[#203140]  p-[6px]  text-center text-[12px] text-[#FEFEFF]">
+              List Functions
+            </button>
+            <button class="rounded-md bg-[#203140]  p-[6px]  text-center text-[12px] text-[#FEFEFF]">
+              Advanced Simulation
+            </button>
+            <button class="col-span-2 rounded-md bg-[#203140]  p-[6px]  text-center text-[12px] text-[#FEFEFF]">
+              start
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default ContractSimulator;
